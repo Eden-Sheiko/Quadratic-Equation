@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Equation.cpp" "CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o" "gcc" "CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o.d"
   "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/main.cpp" "CMakeFiles/Quadratic_Equation.dir/main.cpp.o" "gcc" "CMakeFiles/Quadratic_Equation.dir/main.cpp.o.d"
   )
 

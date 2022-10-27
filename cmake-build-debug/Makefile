@@ -129,6 +129,30 @@ Quadratic_Equation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/build
 .PHONY : Quadratic_Equation/fast
 
+Equation.o: Equation.cpp.o
+.PHONY : Equation.o
+
+# target to build an object file
+Equation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o
+.PHONY : Equation.cpp.o
+
+Equation.i: Equation.cpp.i
+.PHONY : Equation.i
+
+# target to preprocess a source file
+Equation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/Equation.cpp.i
+.PHONY : Equation.cpp.i
+
+Equation.s: Equation.cpp.s
+.PHONY : Equation.s
+
+# target to generate assembly for a file
+Equation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/Equation.cpp.s
+.PHONY : Equation.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Quadratic_Equation"
+	@echo "... Equation.o"
+	@echo "... Equation.i"
+	@echo "... Equation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
