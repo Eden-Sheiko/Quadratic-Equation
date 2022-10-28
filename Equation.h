@@ -12,7 +12,18 @@ public:
     Equation(double a,double b,double c)
         :m_b{b},m_c{c}{
         set_a(a);
+        discriminant();
     }
+
+
+    ~Equation(){
+        delete[] m_ptr; //todo: maybe to check if there was no alloc
+        m_ptr = nullptr;
+        m_a=0;
+        m_b=0;
+        m_c=0;
+    }
+
 
     //setters & getters
     [[nodiscard]] double get_a()const{return m_a;}
@@ -25,13 +36,16 @@ public:
     void set_b(double);
     void set_c(double);
 
+    //functions
+    void discriminant();
+
 private:
     double m_a {};
     double m_b {};
     double m_c {};
     double *m_ptr {};
     std::size_t m_size {};
-    //todo: private update_solutions
+    void update_solutions();
 };
 
 

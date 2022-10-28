@@ -1,7 +1,8 @@
 #include "Equation.h"
 
 int main() {
-    Equation equation(1,2,3);
+    Equation equation(1,-3,-10);
+    //equation.discriminant();
 
 
 

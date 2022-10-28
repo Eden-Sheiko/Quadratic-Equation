@@ -176,7 +176,33 @@ CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: /mnt/c/Users/Eden/CLionProject
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
-  /usr/include/c++/9/bits/istream.tcc
+  /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/9/bits/specfun.h \
+  /usr/include/c++/9/tr1/gamma.tcc \
+  /usr/include/c++/9/tr1/special_function_util.h \
+  /usr/include/c++/9/tr1/bessel_function.tcc \
+  /usr/include/c++/9/tr1/beta_function.tcc \
+  /usr/include/c++/9/tr1/ell_integral.tcc \
+  /usr/include/c++/9/tr1/exp_integral.tcc \
+  /usr/include/c++/9/tr1/hypergeometric.tcc \
+  /usr/include/c++/9/tr1/legendre_function.tcc \
+  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/9/tr1/poly_hermite.tcc \
+  /usr/include/c++/9/tr1/poly_laguerre.tcc \
+  /usr/include/c++/9/tr1/riemann_zeta.tcc \
+  /usr/include/c++/9/cassert \
+  /usr/include/assert.h
 
 CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp \
   /usr/include/stdc-predef.h \
@@ -358,6 +384,26 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp:
 
+/usr/include/assert.h:
+
+/usr/include/c++/9/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/9/tr1/beta_function.tcc:
+
+/usr/include/c++/9/tr1/bessel_function.tcc:
+
+/usr/include/c++/9/tr1/special_function_util.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
 /usr/include/c++/9/istream:
 
 /usr/include/c++/9/bits/streambuf_iterator.h:
@@ -375,6 +421,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/c++/9/bits/locale_classes.tcc:
 
 /usr/include/c++/9/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
@@ -397,6 +445,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/9/bits/specfun.h:
 
 /usr/include/endian.h:
 
@@ -422,11 +472,15 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/ext/type_traits.h:
 
+/usr/include/math.h:
+
 /usr/include/c++/9/bits/nested_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/c++/9/bits/allocator.h:
+
+/usr/include/c++/9/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/9/bits/streambuf.tcc:
 
@@ -440,11 +494,15 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/bits/cxxabi_init_exception.h:
 
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
 /usr/include/c++/9/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/9/ext/numeric_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/c++/9/bits/exception_ptr.h:
 
@@ -480,9 +538,13 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/wchar.h:
 
+/usr/include/c++/9/tr1/gamma.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.cpp:
+
+/usr/include/c++/9/tr1/ell_integral.tcc:
 
 /usr/include/errno.h:
 
@@ -516,6 +578,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/bits/ios_base.h:
 
+/usr/include/c++/9/tr1/modified_bessel_func.tcc:
+
 /usr/include/c++/9/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -540,6 +604,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/bits/concept_check.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
 
 /usr/include/wctype.h:
@@ -559,6 +625,10 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/9/iosfwd:
+
+/usr/include/c++/9/cassert:
+
+/usr/include/c++/9/cmath:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -585,6 +655,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/c++/9/bits/stl_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/c++/9/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -662,6 +734,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/ext/alloc_traits.h:
 
+/usr/include/c++/9/tr1/poly_hermite.tcc:
+
 /usr/include/c++/9/bits/locale_facets.tcc:
 
 /usr/include/c++/9/bits/cpp_type_traits.h:
@@ -698,6 +772,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/bits/stl_function.h:
 
+/usr/include/c++/9/tr1/exp_integral.tcc:
+
 /usr/include/c++/9/bits/postypes.h:
 
 /usr/include/c++/9/bits/basic_string.h:
@@ -707,5 +783,7 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/9/bits/functional_hash.h:
+
+/usr/include/c++/9/tr1/hypergeometric.tcc:
 
 /usr/include/stdlib.h:
