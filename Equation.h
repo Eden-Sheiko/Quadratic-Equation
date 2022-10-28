@@ -8,6 +8,7 @@
 
 class Equation {
     friend void swap(Equation &,Equation &);
+    friend std::ostream& operator<<(std::ostream& ,const Equation&);
 public:
     //ctor
     Equation(double a,double b,double c)

@@ -6,6 +6,9 @@
 #include <stdexcept>
 #include <cmath>
 #include <cassert>
+#include <iomanip>
+
+
 
 void Equation::set_a(double a) {
     try {
@@ -62,4 +65,11 @@ void swap(Equation &lhs, Equation &rhs) {
     std::swap(lhs.m_c,rhs.m_c);
     std::swap(lhs.m_size,rhs.m_size);
     std::swap(lhs.m_ptr,rhs.m_ptr);
+}
+
+std::ostream& operator<<(std::ostream &output, const Equation &ref) {
+    output << std::fixed << std::setprecision(1) << ref.m_a  << " X^2" << " + ";
+    output << std::fixed << std::setprecision(1) << ref.m_b << " X" << " + ";
+    output << std::fixed << std::setprecision(1) << ref.m_c << " = " << "0" << std::endl;
+    return output;
 }

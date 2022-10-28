@@ -5,6 +5,7 @@ int main() {
     Equation eq2 = eq;
     Equation eq3(1,1,1);
     eq3 = eq2;
+    std::cout << eq;
 
 
 

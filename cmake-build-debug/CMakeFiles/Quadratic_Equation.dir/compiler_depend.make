@@ -202,7 +202,27 @@ CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: /mnt/c/Users/Eden/CLionProject
   /usr/include/c++/9/tr1/poly_laguerre.tcc \
   /usr/include/c++/9/tr1/riemann_zeta.tcc \
   /usr/include/c++/9/cassert \
-  /usr/include/assert.h
+  /usr/include/assert.h \
+  /usr/include/c++/9/iomanip \
+  /usr/include/c++/9/locale \
+  /usr/include/c++/9/bits/locale_facets_nonio.h \
+  /usr/include/c++/9/ctime \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/9/bits/codecvt.h \
+  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/9/bits/locale_conv.h \
+  /usr/include/c++/9/bits/unique_ptr.h \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/array \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/invoke.h \
+  /usr/include/c++/9/bits/quoted_string.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc
 
 CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp \
   /usr/include/stdc-predef.h \
@@ -384,6 +404,30 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp:
 
+/usr/include/c++/9/bits/sstream.tcc:
+
+/usr/include/c++/9/sstream:
+
+/usr/include/c++/9/bits/quoted_string.h:
+
+/usr/include/c++/9/array:
+
+/usr/include/c++/9/tuple:
+
+/usr/include/c++/9/bits/stl_relops.h:
+
+/usr/include/c++/9/bits/unique_ptr.h:
+
+/usr/include/c++/9/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/9/bits/codecvt.h:
+
+/usr/include/c++/9/bits/locale_facets_nonio.h:
+
+/usr/include/c++/9/locale:
+
+/usr/include/c++/9/iomanip:
+
 /usr/include/assert.h:
 
 /usr/include/c++/9/tr1/riemann_zeta.tcc:
@@ -399,6 +443,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
@@ -419,6 +465,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/c++/9/system_error:
 
 /usr/include/c++/9/bits/locale_classes.tcc:
+
+/usr/include/c++/9/utility:
 
 /usr/include/c++/9/bits/basic_string.tcc:
 
@@ -456,6 +504,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
+/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/c++/9/bits/basic_ios.h:
@@ -479,6 +529,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/c++/9/bits/allocator.h:
+
+/usr/include/c++/9/bits/locale_conv.h:
 
 /usr/include/c++/9/tr1/poly_laguerre.tcc:
 
@@ -519,6 +571,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/9/ctime:
 
 /usr/include/c++/9/bits/ptr_traits.h:
 
@@ -608,6 +662,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
 
+/usr/include/c++/9/bits/uses_allocator.h:
+
 /usr/include/wctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -639,6 +695,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/9/bits/invoke.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
 
@@ -699,6 +757,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/pthread.h:
 
 /usr/include/c++/9/bits/string_view.tcc:
+
+/usr/include/libintl.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
