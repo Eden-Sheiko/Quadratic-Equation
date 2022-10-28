@@ -10,6 +10,7 @@ class Equation {
     friend void swap(Equation &,Equation &);
     friend std::ostream& operator<<(std::ostream& ,const Equation&);
 public:
+    //todo: rule of 5
     //ctor
     Equation(double a,double b,double c)
         :m_b{b},m_c{c}{

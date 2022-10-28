@@ -6,6 +6,9 @@ int main() {
     Equation eq3(1,1,1);
     eq3 = eq2;
     std::cout << eq;
+    std::cout << eq2;
+    std::cout << eq3;
+    eq3.set_c(0);
 
 
 
