@@ -16,7 +16,7 @@ void Equation::set_a(double a) {
             throw std::invalid_argument("a cannot be zero.");
         }
         m_a=a;
-        update_solutions();
+        update_solutions(m_a,m_b,m_c);
     }
     catch (const std::invalid_argument& e){
         std::cerr << e.what();
@@ -25,12 +25,12 @@ void Equation::set_a(double a) {
 
 void Equation::set_b(double b) {
     m_b=b;
-    update_solutions();
+    update_solutions(m_a,m_b,m_c);
 }
 
 void Equation::set_c(double c) {
     m_c=c;
-    update_solutions();
+    update_solutions(m_a,m_b,m_c);
 }
 
 void Equation::discriminant() {
@@ -55,8 +55,10 @@ void Equation::discriminant() {
     }
 }
 
-void Equation::update_solutions() {
-   //todo: update_solutions in case of set a , b , c ctor
+void Equation::update_solutions(double a,double b,double c) {
+   //todo: update_solutions in case of set a , b , c ctor maybe bug with 0
+   if(m_size>=0) {delete[] m_ptr;}
+   discriminant();
 }
 
 void swap(Equation &lhs, Equation &rhs) {

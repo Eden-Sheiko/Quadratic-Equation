@@ -15,16 +15,12 @@ public:
     Equation(double a,double b,double c)
         :m_b{b},m_c{c}{
         set_a(a);
-        discriminant();
-        update_solutions();
+        update_solutions(m_a,m_b,m_c);
     }
     //cpy ctor
-    Equation(const Equation &other){
-        m_a=other.m_a;
-        m_b=other.m_b;
-        m_c=other.m_c;
-        m_size=other.m_size;
-        discriminant();
+    Equation(const Equation &other)
+        :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+        update_solutions(m_a,m_b,m_c);
         for (auto i = 0; i < other.m_size; ++i) {
             m_ptr[i] = other.m_ptr[i];
         }
@@ -67,7 +63,7 @@ private:
     double m_c {};
     double *m_ptr {};
     std::size_t m_size {};
-    void update_solutions();
+    void update_solutions(double,double,double);
 };
 
 
