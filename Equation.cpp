@@ -55,3 +55,11 @@ void Equation::discriminant() {
 void Equation::update_solutions() {
 
 }
+
+void swap(Equation &lhs, Equation &rhs) {
+    std::swap(lhs.m_a,rhs.m_a);
+    std::swap(lhs.m_b,rhs.m_b);
+    std::swap(lhs.m_c,rhs.m_c);
+    std::swap(lhs.m_size,rhs.m_size);
+    std::swap(lhs.m_ptr,rhs.m_ptr);
+}

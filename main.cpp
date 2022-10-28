@@ -1,9 +1,10 @@
 #include "Equation.h"
 
 int main() {
-    Equation equation(1,-3,-10);
-    Equation equation2 = equation;
-    //equation.discriminant();
+    Equation eq(1,-3,-10);
+    Equation eq2 = eq;
+    Equation eq3(1,1,1);
+    eq3 = eq2;
 
 
 

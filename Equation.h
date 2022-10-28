@@ -7,6 +7,7 @@
 #include <iostream>
 
 class Equation {
+    friend void swap(Equation &,Equation &);
 public:
     //ctor
     Equation(double a,double b,double c)
@@ -15,7 +16,7 @@ public:
         discriminant();
         update_solutions();
     }
-
+    //cpy ctor
     Equation(const Equation &other){
         m_a=other.m_a;
         m_b=other.m_b;
@@ -26,6 +27,15 @@ public:
             m_ptr[i] = other.m_ptr[i];
         }
     }
+    //assignment operator
+    Equation & operator=(const Equation &other){
+        if(this != &other)
+        {
+            Equation tmp(other);
+            swap(*this,tmp);
+        }
+        return *this;
+    }
 
     ~Equation(){
         delete[] m_ptr; //todo: maybe to check if there was no alloc
@@ -35,13 +45,12 @@ public:
         m_c=0;
     }
 
-
     //setters & getters
     [[nodiscard]] double get_a()const{return m_a;}
     [[nodiscard]] double get_b()const{return m_b;}
     [[nodiscard]] double get_c()const{return m_c;}
     [[nodiscard]] std::size_t get_solutions_size()const{return m_size;}
-    [[nodiscard]] double const *const get_solutions()const{return m_ptr;}
+    [[nodiscard]] double const *get_solutions()const{return m_ptr;}
 
     void set_a(double);
     void set_b(double);
