@@ -13,8 +13,19 @@ public:
         :m_b{b},m_c{c}{
         set_a(a);
         discriminant();
+        update_solutions();
     }
 
+    Equation(const Equation &other){
+        m_a=other.m_a;
+        m_b=other.m_b;
+        m_c=other.m_c;
+        m_size=other.m_size;
+        discriminant();
+        for (auto i = 0; i < other.m_size; ++i) {
+            m_ptr[i] = other.m_ptr[i];
+        }
+    }
 
     ~Equation(){
         delete[] m_ptr; //todo: maybe to check if there was no alloc

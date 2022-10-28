@@ -13,6 +13,7 @@ void Equation::set_a(double a) {
             throw std::invalid_argument("a cannot be zero.");
         }
         m_a=a;
+        update_solutions();
     }
     catch (const std::invalid_argument& e){
         std::cerr << e.what();
@@ -21,10 +22,12 @@ void Equation::set_a(double a) {
 
 void Equation::set_b(double b) {
     m_b=b;
+    update_solutions();
 }
 
 void Equation::set_c(double c) {
     m_c=c;
+    update_solutions();
 }
 
 void Equation::discriminant() {
@@ -35,7 +38,6 @@ void Equation::discriminant() {
         assert(m_ptr);
         m_ptr[0] = (-m_b + sqrt(res)) / (2*m_a);
         m_ptr[1] = (-m_b - sqrt(res)) / (2*m_a);
-
     }
     else if (res==0){
         m_size=1;
@@ -48,4 +50,8 @@ void Equation::discriminant() {
         m_ptr=new double[m_size];
         assert(m_ptr);
     }
+}
+
+void Equation::update_solutions() {
+
 }
