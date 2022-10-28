@@ -1,6 +1,10 @@
-#include <iostream>
+#include "Equation.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Equation equation(1,2,3);
+
+
+
     return 0;
+
 }
