@@ -84,6 +84,9 @@ public:
     //functions
     void discriminant();
 
+    //operators
+
+
 private:
     double m_a {};
     double m_b {};
@@ -93,12 +96,20 @@ private:
     void update_solutions(double,double,double);
 };
 
+
+
+
 inline Equation operator+(const Equation &lhs,const Equation &rhs){
     Equation tmp(lhs.get_a(),lhs.get_b(),lhs.get_c());
     tmp.set_a(lhs.get_a()+rhs.get_a());
     tmp.set_b(lhs.get_b()+rhs.get_b());
     tmp.set_c(lhs.get_c()+rhs.get_c());
-    tmp.discriminant();
+    return tmp;
+}
+
+inline Equation operator+(const double lhs,const Equation &rhs){
+    Equation tmp(rhs.get_a(),rhs.get_b(),rhs.get_c());
+    tmp.set_c(lhs+rhs.get_c());
     return tmp;
 }
 //inline Equation operator+(const Equation &lhs,double number){

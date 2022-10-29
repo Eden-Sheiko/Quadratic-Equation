@@ -77,3 +77,4 @@ std::ostream& operator<<(std::ostream &output, const Equation &ref) { //todo: se
 }
 
 
+
