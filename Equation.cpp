@@ -1,7 +1,6 @@
 #include "Equation.hpp"
 #include <stdexcept>
 #include <cmath>
-#include <cassert>
 #include <iomanip>
 
 void my_assert(bool,const std::string &);
@@ -81,5 +80,3 @@ void my_assert(bool cond,const std::string &message){
         std::exit(EXIT_FAILURE);
     }
 }
-
-

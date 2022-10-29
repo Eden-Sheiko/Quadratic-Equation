@@ -201,8 +201,6 @@ CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: /mnt/c/Users/Eden/CLionProject
   /usr/include/c++/9/tr1/poly_hermite.tcc \
   /usr/include/c++/9/tr1/poly_laguerre.tcc \
   /usr/include/c++/9/tr1/riemann_zeta.tcc \
-  /usr/include/c++/9/cassert \
-  /usr/include/assert.h \
   /usr/include/c++/9/iomanip \
   /usr/include/c++/9/locale \
   /usr/include/c++/9/bits/locale_facets_nonio.h \
@@ -425,8 +423,6 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/c++/9/locale:
 
 /usr/include/c++/9/iomanip:
-
-/usr/include/assert.h:
 
 /usr/include/c++/9/tr1/riemann_zeta.tcc:
 
@@ -683,8 +679,6 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/c++/9/iosfwd:
 
 /usr/include/c++/9/bits/stringfwd.h:
-
-/usr/include/c++/9/cassert:
 
 /usr/include/c++/9/cmath:
 

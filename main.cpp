@@ -1,17 +1,56 @@
 #include "Equation.hpp"
 
+void test(int,int,const std::string&);
+
+void testEquationClass();
+
+void tests();
+
 int main() {
-//    Equation eqa(1,-3,-10);
-//    Equation eq2 = eqa;
-//    Equation eq3(1,1,1);
-//    eq3 = eq2;
-//    std::cout << eqa;
-//    std::cout << eq2;
-//    std::cout << eq3;
-//    eq3.set_c(0);
-//    //testing
-    Equation s(0,-3,-10);
-//    std::cout << "---------------------" << std::endl;
+
+    tests();
+    testEquationClass();
+
+//Equation q1(-1,-3.4,-4.2);
+//std::cout << q1.get_solutions()[0];
+    return 0;
+}
+
+void test(int expected, int actual,const std::string &testName){
+    if(expected==actual){
+        std::cout << testName << " PASSED" << std::endl;
+    }
+    else{
+        std::cout << testName << " FAILED!!!" << std::endl;
+        std::cout << " expected " << expected << " but was " << actual << std::endl;
+    }
+}
+
+
+void testEquationClass(){
+    std::cout << "--------TESTS!!!--------" << std:: endl;
+    std::cout << "--------setters & getters tests!!!--------" << std:: endl;
+    Equation t1(1,2,3);
+    test(1,t1.get_a(),"test get_a");
+    test(2,t1.get_b(),"test get_b");
+    test(3,t1.get_c(),"test get_c");
+    t1.set_a(5);
+    t1.set_b(10);
+    t1.set_c(15);
+    test(5,t1.get_a(),"test set_a");
+    test(10,t1.get_b(),"test set_b");
+    test(15,t1.get_c(),"test set_c");
+    std::cout << "--------operators--------" << std:: endl;
+    Equation t2(1,2,3);
+    Equation t3 = t1+t2;
+    test(t3.get_a() == 2 && t3.get_b() == 4 && t3.get_c() == 6 ,t3.get_a() == 2 && t3.get_b() == 4 && t3.get_c() == 6,
+         "operator obj+obj test");
+
+
+
+}
+
+void tests(){
     using namespace std;
     Equation eq(10,20,30);
     cout << eq << endl;
@@ -36,8 +75,4 @@ int main() {
 //should print: X1 = 1
     cout << "X2 = " << eq.get_solutions()[1] << endl;
 //should print: X2 = -4
-std::cout <<"---" << std::endl;
-Equation q1(-1,-3.4,-4.2);
-std::cout << q1.get_solutions()[0];
-    return 0;
 }
