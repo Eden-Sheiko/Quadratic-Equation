@@ -8,15 +8,13 @@
 #include <cassert>
 #include <iomanip>
 
-
-
 void Equation::set_a(double a) {
-    try {
-        if (a==0) {
+    try{
+        if (a == 0) {
             throw std::invalid_argument("a cannot be zero.");
         }
-        m_a=a;
-        update_solutions(m_a,m_b,m_c);
+            m_a = a;
+            update_solutions(m_a,m_b,m_c);
     }
     catch (const std::invalid_argument& e){
         std::cerr << e.what();
@@ -56,8 +54,9 @@ void Equation::discriminant() {
 }
 
 void Equation::update_solutions(double a,double b,double c) {
-   //todo: update_solutions in case of set a , b , c ctor maybe bug with 0
-   if(m_size>=0) {delete[] m_ptr;}
+   if(m_size >= 0){
+       delete[] m_ptr;
+   }
    discriminant();
 }
 

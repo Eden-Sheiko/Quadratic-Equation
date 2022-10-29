@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Quadratic_Equation">
-				<Option output="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Quadratic_Equation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/Quadratic_Equation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Quadratic_Equation"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Quadratic_Equation"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Quadratic_Equation/fast">
-				<Option output="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Quadratic_Equation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/Quadratic_Equation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,43 +55,43 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Quadratic_Equation/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Quadratic_Equation/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/Equation.cpp">
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Equation.cpp">
 			<Option target="Quadratic_Equation"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/Equation.hpp">
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Equation.hpp">
 			<Option target="Quadratic_Equation"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/main.cpp">
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/main.cpp">
 			<Option target="Quadratic_Equation"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/edens/CLionProjects/Quadratic-Equation/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
