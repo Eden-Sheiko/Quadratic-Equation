@@ -70,7 +70,7 @@ void swap(Equation &lhs, Equation &rhs) {
 }
 
 std::ostream& operator<<(std::ostream &output, const Equation &ref) { //todo: setw()
-    output << std::fixed << std::setprecision(1) << ref.m_a  << " X^2" << " + ";
+    output << std::fixed << std::setprecision(1) << ref.m_a << " X^2" << " + ";
     output << std::fixed << std::setprecision(1) << ref.m_b << " X" << " + ";
     output << std::fixed << std::setprecision(1) << ref.m_c << " = " << "0" << std::endl;
     return output;

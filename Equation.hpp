@@ -93,5 +93,26 @@ private:
     void update_solutions(double,double,double);
 };
 
+inline Equation operator+(const Equation &lhs,const Equation &rhs){
+    Equation tmp(lhs.get_a(),lhs.get_b(),lhs.get_c());
+    tmp.set_a(lhs.get_a()+rhs.get_a());
+    tmp.set_b(lhs.get_b()+rhs.get_b());
+    tmp.set_c(lhs.get_c()+rhs.get_c());
+    tmp.discriminant();
+    return tmp;
+}
+//inline Equation operator+(const Equation &lhs,double number){
+//    Equation tmp;
+//    tmp.set_c(lhs.get_c()+number);
+//    tmp.discriminant();
+//    return tmp;
+//}
+//inline Equation operator+(double number,const Equation &rhs){
+//    Equation tmp;
+//    tmp.set_c(rhs.get_c()+number);
+//    tmp.set_b(rhs.get_b());
+//    tmp.set_c(rhs.get_c());
+//    return tmp;
+//}
 
 #endif //QUADRATIC_EQUATION_EQUATION_HPP

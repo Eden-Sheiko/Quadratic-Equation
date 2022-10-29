@@ -19,6 +19,9 @@ int main() {
 //should print 0
     //eq = -20 + eq;
 
+    cout << Equation(1,5,3) + Equation(2,6,4) << endl;
+//should print: 3X^2 + 11X + 7 = 0
+
 
 
     return 0;
