@@ -1,7 +1,3 @@
-//
-// Created by Eden on 27/10/2022.
-//
-
 #include "Equation.hpp"
 #include <stdexcept>
 #include <cmath>
@@ -9,12 +5,14 @@
 #include <iomanip>
 
 void Equation::set_a(double a) {
-    try{
+    try {
         if (a == 0) {
-            throw std::invalid_argument("a cannot be zero.");
+            throw std::invalid_argument("a cannot be zero.\n");
         }
+        else{
             m_a = a;
             update_solutions(m_a,m_b,m_c);
+        }
     }
     catch (const std::invalid_argument& e){
         std::cerr << e.what();

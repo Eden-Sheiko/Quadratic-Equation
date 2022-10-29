@@ -10,8 +10,8 @@ int main() {
 //    std::cout << eq3;
 //    eq3.set_c(0);
 //    //testing
-    Equation eqa(0,-3,-10);
-    std::cout << "---------------------" << std::endl;
+    Equation s(0,-3,-10);
+//    std::cout << "---------------------" << std::endl;
     using namespace std;
     Equation eq(10,20,30);
     cout << eq << endl;

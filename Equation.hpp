@@ -21,7 +21,7 @@ class Equation {
      *
      * friend function that has access to the private
      *  data members.
-     *  the folowing function can print Equation objects
+     *  the following function can print Equation objects
      * \param std::ostream& first ostream object
      * \param const Equation& second object
      *
@@ -107,6 +107,7 @@ public:
     Equation &operator=(Equation &&other) noexcept {
         if(this != &other){
             set_a(other.m_a);
+            //m_a=other.m_a;
             m_b=other.m_b;
             m_c=other.m_c;
             m_size=other.m_size;
@@ -126,6 +127,7 @@ public:
     ~Equation(){
         delete[] m_ptr;
         m_ptr = nullptr;
+        m_size=0;
         m_a=0;
         m_b=0;
         m_c=0;
