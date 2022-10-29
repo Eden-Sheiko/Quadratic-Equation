@@ -4,6 +4,8 @@
 #include <cassert>
 #include <iomanip>
 
+void my_assert(bool,const std::string &);
+
 void Equation::set_a(double a) {
     try {
         if (a == 0) {
@@ -34,20 +36,20 @@ void Equation::discriminant() {
     if (res>0) {
         m_size=2;
         m_ptr=new double[m_size];
-        assert(m_ptr);
+        my_assert(m_ptr, "alloc failed");
         m_ptr[0] = (-m_b + sqrt(res)) / (2*m_a);
         m_ptr[1] = (-m_b - sqrt(res)) / (2*m_a);
     }
     else if (res==0){
         m_size=1;
         m_ptr=new double[m_size];
-        assert(m_ptr);
+        my_assert(m_ptr, "alloc failed");
         m_ptr[0] = -m_b/(2*m_a);
     }
     else if (res<0){
         m_size=0;
         m_ptr=new double[m_size];
-        assert(m_ptr);
+        my_assert(m_ptr, "alloc failed");
     }
 }
 
@@ -73,5 +75,11 @@ std::ostream& operator<<(std::ostream &output, const Equation &ref) { //todo: se
     return output;
 }
 
+void my_assert(bool cond,const std::string &message){
+    if(!cond){
+        std::cerr << message << std::endl;
+        std::exit(EXIT_FAILURE);
+    }
+}
 
 
