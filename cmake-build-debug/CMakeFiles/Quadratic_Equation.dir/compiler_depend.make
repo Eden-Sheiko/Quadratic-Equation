@@ -3,7 +3,7 @@
 
 CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.h \
+  /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.hpp \
   /usr/include/c++/9/iostream \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -226,7 +226,7 @@ CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: /mnt/c/Users/Eden/CLionProject
 
 CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.h \
+  /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.hpp \
   /usr/include/c++/9/iostream \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -408,8 +408,6 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/sstream:
 
-/usr/include/c++/9/bits/quoted_string.h:
-
 /usr/include/c++/9/array:
 
 /usr/include/c++/9/tuple:
@@ -514,8 +512,6 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/c++/9/type_traits:
-
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/9/bits/std_abs.h:
@@ -539,6 +535,10 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/c++/9/backward/binders.h:
 
 /usr/include/c++/9/typeinfo:
+
+/usr/include/c++/9/bits/quoted_string.h:
+
+/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.hpp:
 
 /usr/include/sched.h:
 
@@ -592,17 +592,17 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/wchar.h:
 
-/usr/include/c++/9/tr1/gamma.tcc:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.cpp:
+/usr/include/c++/9/iostream:
 
-/usr/include/c++/9/tr1/ell_integral.tcc:
+/usr/include/c++/9/tr1/modified_bessel_func.tcc:
 
-/usr/include/errno.h:
+/usr/include/c++/9/ext/new_allocator.h:
 
-/usr/include/c++/9/bits/cxxabi_forced.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
@@ -632,19 +632,19 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/bits/ios_base.h:
 
-/usr/include/c++/9/tr1/modified_bessel_func.tcc:
+/usr/include/c++/9/tr1/gamma.tcc:
 
-/usr/include/c++/9/ext/new_allocator.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.cpp:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/c++/9/tr1/ell_integral.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/errno.h:
 
-/usr/include/c++/9/iostream:
+/usr/include/c++/9/bits/cxxabi_forced.h:
 
-/mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.h:
+/usr/include/c++/9/type_traits:
 
 /usr/include/stdc-predef.h:
 
@@ -682,6 +682,8 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 
 /usr/include/c++/9/iosfwd:
 
+/usr/include/c++/9/bits/stringfwd.h:
+
 /usr/include/c++/9/cassert:
 
 /usr/include/c++/9/cmath:
@@ -689,8 +691,6 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
-
-/usr/include/c++/9/bits/stringfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 

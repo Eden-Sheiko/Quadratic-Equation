@@ -2,24 +2,22 @@
 // Created by Eden on 27/10/2022.
 //
 
-#ifndef QUADRATIC_EQUATION_EQUATION_H
-#define QUADRATIC_EQUATION_EQUATION_H
+#ifndef QUADRATIC_EQUATION_EQUATION_HPP
+#define QUADRATIC_EQUATION_EQUATION_HPP
 #include <iostream>
 
 class Equation {
     friend void swap(Equation &,Equation &);
     friend std::ostream& operator<<(std::ostream& ,const Equation&);
 public:
-    //todo: rule of 5
     //ctor
     Equation(double a,double b,double c)
         :m_b{b},m_c{c}{
         set_a(a);
-        update_solutions(m_a,m_b,m_c);
     }
     //cpy ctor
-    Equation(const Equation &other)
-        :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+    Equation(const Equation &other)//todo test a parameter
+        :m_a{other.m_a},m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
         update_solutions(m_a,m_b,m_c);
         for (auto i = 0; i < other.m_size; ++i) {
             m_ptr[i] = other.m_ptr[i];
@@ -34,7 +32,36 @@ public:
         }
         return *this;
     }
+    //move ctor
+    Equation(Equation &&other)noexcept
+            :m_a{other.m_a},m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+        m_ptr = (other.m_ptr);
 
+        m_a=0;
+        m_b=0;
+        m_c=0;
+        m_size=0;
+        m_ptr= nullptr;
+    }
+    //move assignment
+    Equation &operator=(Equation &&other) noexcept {
+        if(this != &other){
+            delete[] m_ptr;
+
+            m_a=other.m_a;
+            m_b=other.m_b;
+            m_c=other.m_c;
+            m_size=other.m_size;
+            m_ptr=other.m_ptr;
+
+            m_a=0;
+            m_b=0;
+            m_c=0;
+            m_size=0;
+            m_ptr= nullptr;
+        }
+        return *this;
+    }
     ~Equation(){
         delete[] m_ptr; //todo: maybe to check if there was no alloc
         m_ptr = nullptr;
@@ -67,4 +94,4 @@ private:
 };
 
 
-#endif //QUADRATIC_EQUATION_EQUATION_H
+#endif //QUADRATIC_EQUATION_EQUATION_HPP

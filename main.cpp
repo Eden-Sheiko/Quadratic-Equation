@@ -1,4 +1,4 @@
-#include "Equation.h"
+#include "Equation.hpp"
 
 int main() {
     Equation eqa(1,-3,-10);
