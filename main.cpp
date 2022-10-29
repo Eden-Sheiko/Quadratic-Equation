@@ -35,7 +35,8 @@ int main() {
 //should print: X1 = 1
     cout << "X2 = " << eq.get_solutions()[1] << endl;
 //should print: X2 = -4
-
+std::cout <<"---" << std::endl;
+Equation q1(-1,-3.4,-4.2);
+std::cout << q1.get_solutions()[0];
     return 0;
-
 }

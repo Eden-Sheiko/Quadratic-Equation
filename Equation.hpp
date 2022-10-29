@@ -14,33 +14,33 @@ public:
     Equation(double a,double b,double c)
         :m_b{b},m_c{c}{
         set_a(a);
-        std::cout << "ctor" << std::endl;
+        //std::cout << "ctor" << std::endl;
     }
     //cpy ctor
-    Equation(const Equation &other)//todo test a parameter
-        :m_a{other.m_a},m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
-        update_solutions(m_a,m_b,m_c);
+    Equation(const Equation &other)
+        :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+        set_a(other.m_a);
         for (auto i = 0; i < other.m_size; ++i) {
             m_ptr[i] = other.m_ptr[i];
         }
-        std::cout << "cpy ctor" << std::endl;
+        //std::cout << "cpy ctor" << std::endl;
     }
     //assignment operator
-    Equation & operator=(const Equation &other){ //todo test a parameter#4
+    Equation &operator=(const Equation &other){
         if(this != &other)
         {
             Equation tmp(other);
             swap(*this,tmp);
-            std::cout << "assignment" << std::endl;
+            //std::cout << "assignment" << std::endl;
         }
         return *this;
     }
     //move ctor
-    Equation(Equation &&other)noexcept //todo test a parameter #2
-            :m_a{other.m_a},m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+    Equation(Equation &&other)noexcept
+            :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+        set_a(other.m_a);
         m_ptr = (other.m_ptr);
-        std::cout << "move ctor" << std::endl;
-
+        //std::cout << "move ctor" << std::endl;
         other.m_a=0;
         other.m_b=0;
         other.m_c=0;
@@ -48,13 +48,12 @@ public:
         other.m_ptr= nullptr;
     }
     //move assignment
-    Equation &operator=(Equation &&other) noexcept { //todo test a parameter #3
+    Equation &operator=(Equation &&other) noexcept {
         if(this != &other){
-            std::cout << " move assignment" << std::endl;
-
-            delete[] m_ptr;
-
-            m_a=other.m_a;
+            //std::cout << " move assignment" << std::endl;
+            //delete[] m_ptr;
+            //m_a=other.m_a;
+            set_a(other.m_a);
             m_b=other.m_b;
             m_c=other.m_c;
             m_size=other.m_size;
@@ -69,8 +68,8 @@ public:
         return *this;
     }
     ~Equation(){
-        std::cout << "dtor" << std::endl;
-        delete[] m_ptr; //todo: maybe to check if there was no alloc
+        //std::cout << "dtor" << std::endl;
+        delete[] m_ptr;
         m_ptr = nullptr;
         m_a=0;
         m_b=0;
@@ -90,9 +89,6 @@ public:
 
     //functions
     void discriminant();
-
-    //operators
-
 
 private:
     double m_a {};
@@ -122,6 +118,4 @@ inline Equation operator+(const Equation &lhs,const double rhs){
     tmp.set_c(lhs.get_c()+rhs);
     return tmp;
 }
-
-
 #endif //QUADRATIC_EQUATION_EQUATION_HPP
