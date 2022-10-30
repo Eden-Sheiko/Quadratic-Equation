@@ -3,6 +3,9 @@
 #include <cmath>
 #include <iomanip>
 
+constexpr auto param  = 4;
+constexpr auto denominator_param = 2;
+
 void my_assert(bool,const std::string &);
 
 void Equation::set_a(double a) {
@@ -15,39 +18,49 @@ void Equation::set_a(double a) {
             update_solutions(m_a,m_b,m_c);
         }
     }
-    catch (const std::invalid_argument& e){
-        std::cerr << e.what();
+    catch (const std::invalid_argument& error){
+        std::cerr << error.what();
     }
 }
 
 void Equation::set_b(double b) {
-    m_b=b;
+    m_b = b;
     update_solutions(m_a,m_b,m_c);
 }
 
 void Equation::set_c(double c) {
-    m_c=c;
+    m_c = c;
     update_solutions(m_a,m_b,m_c);
 }
-
+/**
+ * \brief discriminant function
+ *
+ * the function handles the 3 solutions
+ * if res of the discriminant bigger then zero
+ * then there is 2 roots
+ * if res of the discriminant equals to zero
+ * then there is 1 root
+ * if res of the discriminant less then zero
+ * there are zero roots
+ */
 void Equation::discriminant() {
-    auto res = m_b*m_b - 4*m_a*m_c;
-    if (res>0) {
-        m_size=2;
-        m_ptr=new double[m_size];
+    auto res = m_b * m_b - param * m_a * m_c;
+    if (res > 0) {
+        m_size = 2;
+        m_ptr = new double[m_size];
         my_assert(m_ptr, "alloc failed");
-        m_ptr[0] = (-m_b + sqrt(res)) / (2*m_a);
-        m_ptr[1] = (-m_b - sqrt(res)) / (2*m_a);
+        m_ptr[0] = (-m_b + sqrt(res)) / (denominator_param * m_a);
+        m_ptr[1] = (-m_b - sqrt(res)) / (denominator_param * m_a);
     }
-    else if (res==0){
-        m_size=1;
-        m_ptr=new double[m_size];
+    else if (res == 0){
+        m_size = 1;
+        m_ptr = new double[m_size];
         my_assert(m_ptr, "alloc failed");
-        m_ptr[0] = -m_b/(2*m_a);
+        m_ptr[0] = -m_b/(denominator_param * m_a);
     }
-    else if (res<0){
-        m_size=0;
-        m_ptr=new double[m_size];
+    else if (res < 0){
+        m_size = 0;
+        m_ptr = new double[m_size];
         my_assert(m_ptr, "alloc failed");
     }
 }
