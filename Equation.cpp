@@ -67,13 +67,22 @@ void swap(Equation &lhs, Equation &rhs) {
     std::swap(lhs.m_ptr,rhs.m_ptr);
 }
 
-std::ostream& operator<<(std::ostream &output, const Equation &ref) { //todo: setw()
-    output << std::fixed << std::setprecision(1) << ref.m_a << " X^2" << " + ";
-    output << std::fixed << std::setprecision(1) << ref.m_b << " X" << " + ";
-    output << std::fixed << std::setprecision(1) << ref.m_c << " = " << "0" << std::endl;
+std::ostream& operator<<(std::ostream &output, const Equation &ref) {
+    output << std::fixed << std::setprecision(1) << ref.m_a << std::setw(4) << "X^2"
+    << std::setw(2) << "+" << std::setw(5);
+    output << std::fixed << std::setprecision(1) << ref.m_b << std::setw(2) << "X"
+    << std::setw(2) << "+" << std::setw(5);
+    output << std::fixed << std::setprecision(1) << ref.m_c << std::setw(2) << "="
+    << std::setw(2) << "0";
     return output;
 }
-
+/**
+ *
+ * \brief my_assert func
+ *
+ * @param bool cond
+ * @param const std::string & message
+ */
 void my_assert(bool cond,const std::string &message){
     if(!cond){
         std::cerr << message << std::endl;
