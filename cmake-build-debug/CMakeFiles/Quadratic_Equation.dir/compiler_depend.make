@@ -402,6 +402,7 @@ CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o: /mnt/c/Users/Eden/CLionProjects/Q
 
 CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp \
   /usr/include/stdc-predef.h \
+  /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Tests.hpp \
   /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.hpp \
   /usr/include/c++/9/iostream \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -575,8 +576,7 @@ CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Qu
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
-  /usr/include/c++/9/bits/istream.tcc \
-  /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Tests.hpp
+  /usr/include/c++/9/bits/istream.tcc
 
 
 /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp:
