@@ -54,6 +54,7 @@ void testEquationClass(){
     Equation t8(10,20,30);
     Equation t8_test(10,20,30);
     test_obj(t8_test,t8,"comparison operator test (obj==obj)");
+    //todo:test of roots (d>0,d=0,d<0)
 }
 
 void tests(){
