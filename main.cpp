@@ -26,6 +26,15 @@ void test(int expected, int actual,const std::string &testName){
     }
 }
 
+void test_obj(const Equation &expected,const Equation &actual,const std::string &testName){
+    if(expected==actual){
+        std::cout << testName << " PASSED" << std::endl;
+    }
+    else{
+        std::cout << testName << " FAILED!!!" << std::endl;
+        std::cout << " expected " << expected << " but was " << actual << std::endl;
+    }
+}
 
 void testEquationClass(){
     std::cout << "--------TESTS!!!--------" << std:: endl;
@@ -42,12 +51,23 @@ void testEquationClass(){
     test(15,t1.get_c(),"test set_c");
     std::cout << "--------operators--------" << std:: endl;
     Equation t2(1,2,3);
-    Equation t3 = t1+t2;
-    test(t3.get_a() == 2 && t3.get_b() == 4 && t3.get_c() == 6 ,t3.get_a() == 2 && t3.get_b() == 4 && t3.get_c() == 6,
-         "operator obj+obj test");
-
-
-
+    Equation t3(1,2,3);
+    Equation t4 = t2+t3;
+    Equation t5_test(2,4,6);
+    test_obj(t5_test,t4,"operator + (obj+obj) test");
+    double test1 = 25;
+    Equation t6(10,10,10);
+    Equation t6_test(10,10,35);
+    t6 = test1 + t6;
+    test_obj(t6_test,t6,"operator + (double+obj) test");
+    double test2 = 40;
+    Equation t7(10,10,10);
+    t7 = t7 + test2;
+    Equation t7_test(10,10,50);
+    test_obj(t7_test,t7,"operator + (obj+double) test");
+    Equation t8(10,20,30);
+    Equation t8_test(10,20,30);
+    test_obj(t8_test,t8,"comparison operator test (obj==obj)");
 }
 
 void tests(){

@@ -204,4 +204,19 @@ inline Equation operator+(const Equation &lhs,const double rhs){
     tmp.set_c(lhs.get_c()+rhs);
     return tmp;
 }
+/**
+ * \brief operator+ overloading.
+ *
+ * receives first arg as Equation and sec arg as Equation
+ * and compares between the two objects
+ *
+ * @param lhs const Equation &
+ * @param rhs const Equation &
+ * @return bool
+ */
+inline bool operator==(const Equation &lhs,const Equation &rhs){
+    return (lhs.get_a() == rhs.get_a() && lhs.get_b() == rhs.get_b() &&
+    lhs.get_c() == rhs.get_c() && *lhs.get_solutions() == *rhs.get_solutions()  &&
+    lhs.get_solutions_size() == rhs.get_solutions_size());
+}
 #endif //QUADRATIC_EQUATION_EQUATION_HPP
