@@ -7,6 +7,7 @@ int main() {
 
 //Equation q1(-1,-3.4,-4.2);
 //std::cout << q1.get_solutions()[0];
+//todo: handle the zero case
     return 0;
 }
 
