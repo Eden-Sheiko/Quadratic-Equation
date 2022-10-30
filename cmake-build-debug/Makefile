@@ -153,6 +153,30 @@ Equation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/Equation.cpp.s
 .PHONY : Equation.cpp.s
 
+Tests.o: Tests.cpp.o
+.PHONY : Tests.o
+
+# target to build an object file
+Tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o
+.PHONY : Tests.cpp.o
+
+Tests.i: Tests.cpp.i
+.PHONY : Tests.i
+
+# target to preprocess a source file
+Tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/Tests.cpp.i
+.PHONY : Tests.cpp.i
+
+Tests.s: Tests.cpp.s
+.PHONY : Tests.s
+
+# target to generate assembly for a file
+Tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Quadratic_Equation.dir/build.make CMakeFiles/Quadratic_Equation.dir/Tests.cpp.s
+.PHONY : Tests.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... Equation.o"
 	@echo "... Equation.i"
 	@echo "... Equation.s"
+	@echo "... Tests.o"
+	@echo "... Tests.i"
+	@echo "... Tests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

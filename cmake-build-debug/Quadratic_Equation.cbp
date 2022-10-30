@@ -88,6 +88,12 @@
 		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Equation.hpp">
 			<Option target="Quadratic_Equation"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Tests.cpp">
+			<Option target="Quadratic_Equation"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Tests.hpp">
+			<Option target="Quadratic_Equation"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/main.cpp">
 			<Option target="Quadratic_Equation"/>
 		</Unit>

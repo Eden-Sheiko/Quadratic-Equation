@@ -64,7 +64,18 @@ void Equation::discriminant() {
         my_assert(m_ptr, "alloc failed");
     }
 }
-
+/**
+ * \brief update_solutions of the Equation
+ *
+ * deletes the dynamic array and calls to the
+ * discriminant() function
+ *
+ * @param double a
+ * @param double b
+ * @param double c
+ *
+ * @see discriminant()
+ */
 void Equation::update_solutions(double a,double b,double c) {
    if(m_size >= 0){
        delete[] m_ptr;

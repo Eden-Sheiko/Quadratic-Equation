@@ -3,4 +3,4 @@ project(Quadratic_Equation)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Quadratic_Equation main.cpp Equation.cpp Equation.hpp)
+add_executable(Quadratic_Equation main.cpp Equation.cpp Equation.hpp Tests.cpp Tests.hpp)
