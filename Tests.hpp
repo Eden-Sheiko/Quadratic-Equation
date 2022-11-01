@@ -5,6 +5,8 @@
 
 void test(int,int,const std::string&);
 
+void test_obj(const Equation &,const Equation &,const std::string &);
+
 void testEquationClass();
 
 void tests();
