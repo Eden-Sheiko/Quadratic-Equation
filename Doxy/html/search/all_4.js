@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['set_5fa_5',['set_a',['../classEquation.html#a6dcd030d9f0210271a1beccc4c0352ae',1,'Equation']]],
-  ['swap_6',['swap',['../classEquation.html#a09227245aaebebac256580f757174ba7',1,'Equation']]]
+  ['main_11',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_12',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['my_5fassert_13',['my_assert',['../_equation_8cpp.html#ac5ad91ee873e2e76ab472b66afe8f6a5',1,'Equation.cpp']]]
 ];

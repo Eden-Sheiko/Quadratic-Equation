@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_3d_12',['operator=',['../classEquation.html#a10ac36464aa20c1e9abee561df79055e',1,'Equation::operator=(const Equation &amp;other)'],['../classEquation.html#a5225858dddf8142f0d99dbffeb7f90cf',1,'Equation::operator=(Equation &amp;&amp;other) noexcept']]]
+  ['main_44',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['my_5fassert_45',['my_assert',['../_equation_8cpp.html#ac5ad91ee873e2e76ab472b66afe8f6a5',1,'Equation.cpp']]]
 ];

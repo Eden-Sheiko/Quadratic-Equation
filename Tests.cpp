@@ -54,7 +54,12 @@ void testEquationClass(){
     Equation t8(10,20,30);
     Equation t8_test(10,20,30);
     test_obj(t8_test,t8,"comparison operator test (obj==obj)");
-    //todo:test of roots (d>0,d=0,d<0)
+    Equation t9_test(3,24,48);
+    Equation t10_test(1,3,-4);
+    std::cout << "--------Logic--------" << std:: endl;
+    test(0,t8_test.get_solutions_size(),"testing (Discriminant < 0)");
+    test(1,t9_test.get_solutions_size(),"testing (Discriminant = 0)");
+    test(2,t10_test.get_solutions_size(),"testing (Discriminant > 0)");
 }
 
 void tests(){

@@ -1,0 +1,104 @@
+\hypertarget{_equation_8cpp}{}\doxysection{Equation.\+cpp File Reference}
+\label{_equation_8cpp}\index{Equation.cpp@{Equation.cpp}}
+{\ttfamily \#include \char`\"{}Equation.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+Include dependency graph for Equation.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_equation_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_equation_8cpp_ac5ad91ee873e2e76ab472b66afe8f6a5}{my\+\_\+assert}} (bool cond, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em my\+\_\+assert func \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_equation_8cpp_acfecea5a8e3be121309e98544a372ec6}{swap}} (\mbox{\hyperlink{class_equation}{Equation}} \&lhs, \mbox{\hyperlink{class_equation}{Equation}} \&rhs)
+\item 
+std\+::ostream \& \mbox{\hyperlink{_equation_8cpp_abd6e10101be25a984c529f793f7846a8}{operator$<$$<$}} (std\+::ostream \&output, const \mbox{\hyperlink{class_equation}{Equation}} \&ref)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr auto \mbox{\hyperlink{_equation_8cpp_ad5cfedd0fb524da08f3d0bfce15fd0e0}{param}} = 4
+\item 
+constexpr auto \mbox{\hyperlink{_equation_8cpp_a78d4bdacd0d2b1ded75901063f216b89}{denominator\+\_\+param}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_equation_8cpp_ac5ad91ee873e2e76ab472b66afe8f6a5}\label{_equation_8cpp_ac5ad91ee873e2e76ab472b66afe8f6a5}} 
+\index{Equation.cpp@{Equation.cpp}!my\_assert@{my\_assert}}
+\index{my\_assert@{my\_assert}!Equation.cpp@{Equation.cpp}}
+\doxysubsubsection{\texorpdfstring{my\_assert()}{my\_assert()}}
+{\footnotesize\ttfamily void my\+\_\+assert (\begin{DoxyParamCaption}\item[{bool}]{cond,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+my\+\_\+assert func 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & cond \\
+\hline
+{\em const} & std\+::string \& message \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{_equation_8cpp_ac5ad91ee873e2e76ab472b66afe8f6a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_equation_8cpp_abd6e10101be25a984c529f793f7846a8}\label{_equation_8cpp_abd6e10101be25a984c529f793f7846a8}} 
+\index{Equation.cpp@{Equation.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Equation.cpp@{Equation.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{output,  }\item[{const \mbox{\hyperlink{class_equation}{Equation}} \&}]{ref }\end{DoxyParamCaption})}
+
+friend function that has access to the private data members. the following function can print \mbox{\hyperlink{class_equation}{Equation}} objects 
+\begin{DoxyParams}{Parameters}
+{\em std\+::ostream\&} & first ostream object \\
+\hline
+{\em const} & \mbox{\hyperlink{class_equation}{Equation}}\& second object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_equation_8cpp_acfecea5a8e3be121309e98544a372ec6}\label{_equation_8cpp_acfecea5a8e3be121309e98544a372ec6}} 
+\index{Equation.cpp@{Equation.cpp}!swap@{swap}}
+\index{swap@{swap}!Equation.cpp@{Equation.cpp}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_equation}{Equation}} \&}]{lhs,  }\item[{\mbox{\hyperlink{class_equation}{Equation}} \&}]{rhs }\end{DoxyParamCaption})}
+
+friend function that has access to the private data members.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Equation\&} & first obj to swap \\
+\hline
+{\em Equation\&} & second obj to swap \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_equation_8cpp_a78d4bdacd0d2b1ded75901063f216b89}\label{_equation_8cpp_a78d4bdacd0d2b1ded75901063f216b89}} 
+\index{Equation.cpp@{Equation.cpp}!denominator\_param@{denominator\_param}}
+\index{denominator\_param@{denominator\_param}!Equation.cpp@{Equation.cpp}}
+\doxysubsubsection{\texorpdfstring{denominator\_param}{denominator\_param}}
+{\footnotesize\ttfamily constexpr auto denominator\+\_\+param = 2\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{_equation_8cpp_ad5cfedd0fb524da08f3d0bfce15fd0e0}\label{_equation_8cpp_ad5cfedd0fb524da08f3d0bfce15fd0e0}} 
+\index{Equation.cpp@{Equation.cpp}!param@{param}}
+\index{param@{param}!Equation.cpp@{Equation.cpp}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily constexpr auto param = 4\hspace{0.3cm}{\ttfamily [constexpr]}}
+

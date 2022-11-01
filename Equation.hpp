@@ -15,7 +15,7 @@ class Equation {
      *  \param Equation& first obj to swap
      *  \param Equation& second obj to swap
     */
-    friend void swap(Equation &,Equation &);
+    friend void swap(Equation&,Equation&);
     /**
      * \brief operator << overloading
      *
@@ -42,14 +42,14 @@ public:
     Equation(double a,double b,double c)
         :m_b{b},m_c{c}{
         set_a(a);
-    }
+        }
     /**
      * \brief user defined parametric cpy ctor
      * @param other Equation &
      * the ctor has function that checks if a is zero,
      * @see set_a()
      */
-    Equation(const Equation &other)
+    Equation(const Equation& other)
         :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
         set_a(other.m_a);
         for (auto i = 0; i < other.m_size; ++i) {
@@ -68,7 +68,7 @@ public:
      * @param other const Equation &
      * @return *this
      */
-    Equation &operator=(const Equation &other){
+    Equation &operator=(const Equation& other){
         if(this != &other)
         {
             Equation tmp(other);
@@ -76,7 +76,6 @@ public:
         }
         return *this;
     }
-    //todo: self assessment
     /**
      * \brief move ctor
      *
@@ -85,7 +84,7 @@ public:
      *
      * @param other Equation &&
      */
-    Equation(Equation &&other)noexcept
+    Equation(Equation&& other)noexcept
             :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
         set_a(other.m_a);
         m_ptr = (other.m_ptr);
@@ -95,7 +94,6 @@ public:
         other.m_size=0;
         other.m_ptr= nullptr;
     }
-    //todo: self assessment
     /**
      * \brief move assignment
      *
@@ -104,20 +102,19 @@ public:
      * @param other Equation &&
      * @return *this
      */
-    Equation &operator=(Equation &&other) noexcept {
+    Equation& operator=(Equation&& other) noexcept {
         if(this != &other){
             set_a(other.m_a);
-            //m_a=other.m_a;
-            m_b=other.m_b;
-            m_c=other.m_c;
-            m_size=other.m_size;
-            m_ptr=other.m_ptr;
+            m_b = other.m_b;
+            m_c = other.m_c;
+            m_size = other.m_size;
+            m_ptr = other.m_ptr;
 
-            other.m_a=0;
-            other.m_b=0;
-            other.m_c=0;
-            other.m_size=0;
-            other.m_ptr= nullptr;
+            other.m_a = 0;
+            other.m_b = 0;
+            other.m_c = 0;
+            other.m_size = 0;
+            other.m_ptr = nullptr;
         }
         return *this;
     }
@@ -127,10 +124,10 @@ public:
     ~Equation(){
         delete[] m_ptr;
         m_ptr = nullptr;
-        m_size=0;
-        m_a=0;
-        m_b=0;
-        m_c=0;
+        m_size = 0;
+        m_a = 0;
+        m_b = 0;
+        m_c = 0;
     }
     /// getters
     [[nodiscard]] double get_a()const{return m_a;}
@@ -160,6 +157,7 @@ private:
     std::size_t m_size {};
     void update_solutions(double,double,double);
 };
+//todo: this valeri - those functions are not part of doxygen
 /**
  * \brief operator+ overloading.
  *
@@ -169,11 +167,11 @@ private:
  * @param rhs const Equation &
  * @return Equation obj
  */
-inline Equation operator+(const Equation &lhs,const Equation &rhs){
+inline Equation operator+(const Equation& lhs,const Equation& rhs){
     Equation tmp(lhs.get_a(),lhs.get_b(),lhs.get_c());
-    tmp.set_a(lhs.get_a()+rhs.get_a());
-    tmp.set_b(lhs.get_b()+rhs.get_b());
-    tmp.set_c(lhs.get_c()+rhs.get_c());
+    tmp.set_a(lhs.get_a() + rhs.get_a());
+    tmp.set_b(lhs.get_b() + rhs.get_b());
+    tmp.set_c(lhs.get_c() + rhs.get_c());
     return tmp;
 }
 /**
@@ -185,9 +183,9 @@ inline Equation operator+(const Equation &lhs,const Equation &rhs){
  * @param rhs const double
  * @return Equation obj
  */
-inline Equation operator+(const double lhs,const Equation &rhs){
+inline Equation operator+(const double lhs,const Equation& rhs){
     Equation tmp(rhs.get_a(),rhs.get_b(),rhs.get_c());
-    tmp.set_c(lhs+rhs.get_c());
+    tmp.set_c(lhs + rhs.get_c());
     return tmp;
 }
 /**
@@ -199,9 +197,9 @@ inline Equation operator+(const double lhs,const Equation &rhs){
  * @param rhs const Equation &
  * @return Equation obj
  */
-inline Equation operator+(const Equation &lhs,const double rhs){
+inline Equation operator+(const Equation& lhs,const double rhs){
     Equation tmp(lhs.get_a(),lhs.get_b(),lhs.get_c());
-    tmp.set_c(lhs.get_c()+rhs);
+    tmp.set_c(lhs.get_c() + rhs);
     return tmp;
 }
 /**
@@ -214,7 +212,7 @@ inline Equation operator+(const Equation &lhs,const double rhs){
  * @param rhs const Equation &
  * @return bool
  */
-inline bool operator==(const Equation &lhs,const Equation &rhs){
+inline bool operator==(const Equation& lhs,const Equation& rhs){
     return (lhs.get_a() == rhs.get_a() && lhs.get_b() == rhs.get_b() &&
     lhs.get_c() == rhs.get_c() && *lhs.get_solutions() == *rhs.get_solutions()  &&
     lhs.get_solutions_size() == rhs.get_solutions_size());

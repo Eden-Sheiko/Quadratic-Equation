@@ -1,0 +1,371 @@
+\hypertarget{class_equation}{}\doxysection{Equation Class Reference}
+\label{class_equation}\index{Equation@{Equation}}
+
+
+class \mbox{\hyperlink{class_equation}{Equation}} which managers quadratic \mbox{\hyperlink{class_equation}{Equation}}.  
+
+
+
+
+{\ttfamily \#include $<$Equation.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_equation_a1a9c3029fd4faef5222a208597df070b}{Equation}} (double a, double b, double c)
+\begin{DoxyCompactList}\small\item\em user defined parametric ctor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_equation_a6bfca5d7b33d14815494b24a4cd5ebfb}{Equation}} (const \mbox{\hyperlink{class_equation}{Equation}} \&other)
+\begin{DoxyCompactList}\small\item\em user defined parametric cpy ctor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_equation}{Equation}} \& \mbox{\hyperlink{class_equation_a10ac36464aa20c1e9abee561df79055e}{operator=}} (const \mbox{\hyperlink{class_equation}{Equation}} \&other)
+\begin{DoxyCompactList}\small\item\em assignment operator \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_equation_ae54eb6a6d18640817b6b87429edf804c}{Equation}} (\mbox{\hyperlink{class_equation}{Equation}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em move ctor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_equation}{Equation}} \& \mbox{\hyperlink{class_equation_a5225858dddf8142f0d99dbffeb7f90cf}{operator=}} (\mbox{\hyperlink{class_equation}{Equation}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em move assignment \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_equation_a097243d0dfd608330fc91f115a0d15bb}{$\sim$\+Equation}} ()
+\begin{DoxyCompactList}\small\item\em dtor \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_a11cf24644e2c0b7b77be1cf025d9f494}{get\+\_\+a}} () const
+\begin{DoxyCompactList}\small\item\em getters \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_equation_a50d33a591c05fd737d9729177e1cfae4}{get\+\_\+b}} () const
+\item 
+double \mbox{\hyperlink{class_equation_a968dc6cfe47063046ff8a445166b3280}{get\+\_\+c}} () const
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_equation_a199d6232c368f3589b4a4d5599fb40c0}{get\+\_\+solutions\+\_\+size}} () const
+\item 
+const double $\ast$ \mbox{\hyperlink{class_equation_a03c91a5b02781ddafc61246a1ea6d5ac}{get\+\_\+solutions}} () const
+\item 
+void \mbox{\hyperlink{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}{set\+\_\+a}} (double)
+\item 
+void \mbox{\hyperlink{class_equation_a3738056b0f6f7958764a9e656400b68f}{set\+\_\+b}} (double)
+\item 
+void \mbox{\hyperlink{class_equation_a78b476052e026d0d3ef66e1fb17184b5}{set\+\_\+c}} (double)
+\item 
+void \mbox{\hyperlink{class_equation_a925ef4f5641340b66f46ce620c5fbe94}{discriminant}} ()
+\begin{DoxyCompactList}\small\item\em void functions that calculates discriminant \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_equation_a09227245aaebebac256580f757174ba7}{swap}} (\mbox{\hyperlink{class_equation}{Equation}} \&, \mbox{\hyperlink{class_equation}{Equation}} \&)
+\begin{DoxyCompactList}\small\item\em swaps two \mbox{\hyperlink{class_equation}{Equation}} objects. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{class_equation_adda6d309cbb3742a586730a1f921794c}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_equation}{Equation}} \&)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ overloading \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class \mbox{\hyperlink{class_equation}{Equation}} which managers quadratic \mbox{\hyperlink{class_equation}{Equation}}. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_equation_a1a9c3029fd4faef5222a208597df070b}\label{class_equation_a1a9c3029fd4faef5222a208597df070b}} 
+\index{Equation@{Equation}!Equation@{Equation}}
+\index{Equation@{Equation}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{Equation()}{Equation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Equation\+::\+Equation (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+user defined parametric ctor 
+
+the ctor has function that checks if a is zero, \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}{set\+\_\+a()}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & (double)the first argument. \\
+\hline
+{\em b} & (double)the second argument. \\
+\hline
+{\em c} & (double)the third argument. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_equation_a6bfca5d7b33d14815494b24a4cd5ebfb}\label{class_equation_a6bfca5d7b33d14815494b24a4cd5ebfb}} 
+\index{Equation@{Equation}!Equation@{Equation}}
+\index{Equation@{Equation}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{Equation()}{Equation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Equation\+::\+Equation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_equation}{Equation}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+user defined parametric cpy ctor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{class_equation}{Equation}} \& the ctor has function that checks if a is zero, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}{set\+\_\+a()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_equation_ae54eb6a6d18640817b6b87429edf804c}\label{class_equation_ae54eb6a6d18640817b6b87429edf804c}} 
+\index{Equation@{Equation}!Equation@{Equation}}
+\index{Equation@{Equation}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{Equation()}{Equation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Equation\+::\+Equation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_equation}{Equation}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+move ctor 
+
+the function handles a = 0 case \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}{set\+\_\+a()}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{class_equation}{Equation}} \&\& \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_equation_a097243d0dfd608330fc91f115a0d15bb}\label{class_equation_a097243d0dfd608330fc91f115a0d15bb}} 
+\index{Equation@{Equation}!````~Equation@{$\sim$Equation}}
+\index{````~Equation@{$\sim$Equation}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{$\sim$Equation()}{~Equation()}}
+{\footnotesize\ttfamily Equation\+::$\sim$\+Equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+dtor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_equation_a925ef4f5641340b66f46ce620c5fbe94}\label{class_equation_a925ef4f5641340b66f46ce620c5fbe94}} 
+\index{Equation@{Equation}!discriminant@{discriminant}}
+\index{discriminant@{discriminant}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{discriminant()}{discriminant()}}
+{\footnotesize\ttfamily void Equation\+::discriminant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+void functions that calculates discriminant 
+
+discriminant function
+
+the function handles the 3 solutions if res of the discriminant bigger then zero then there is 2 roots if res of the discriminant equals to zero then there is 1 root if res of the discriminant less then zero there are zero roots Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_equation_a925ef4f5641340b66f46ce620c5fbe94_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a11cf24644e2c0b7b77be1cf025d9f494}\label{class_equation_a11cf24644e2c0b7b77be1cf025d9f494}} 
+\index{Equation@{Equation}!get\_a@{get\_a}}
+\index{get\_a@{get\_a}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{get\_a()}{get\_a()}}
+{\footnotesize\ttfamily double Equation\+::get\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+getters 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a11cf24644e2c0b7b77be1cf025d9f494_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a50d33a591c05fd737d9729177e1cfae4}\label{class_equation_a50d33a591c05fd737d9729177e1cfae4}} 
+\index{Equation@{Equation}!get\_b@{get\_b}}
+\index{get\_b@{get\_b}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{get\_b()}{get\_b()}}
+{\footnotesize\ttfamily double Equation\+::get\+\_\+b (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a50d33a591c05fd737d9729177e1cfae4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a968dc6cfe47063046ff8a445166b3280}\label{class_equation_a968dc6cfe47063046ff8a445166b3280}} 
+\index{Equation@{Equation}!get\_c@{get\_c}}
+\index{get\_c@{get\_c}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{get\_c()}{get\_c()}}
+{\footnotesize\ttfamily double Equation\+::get\+\_\+c (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a968dc6cfe47063046ff8a445166b3280_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a03c91a5b02781ddafc61246a1ea6d5ac}\label{class_equation_a03c91a5b02781ddafc61246a1ea6d5ac}} 
+\index{Equation@{Equation}!get\_solutions@{get\_solutions}}
+\index{get\_solutions@{get\_solutions}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{get\_solutions()}{get\_solutions()}}
+{\footnotesize\ttfamily const double$\ast$ Equation\+::get\+\_\+solutions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a03c91a5b02781ddafc61246a1ea6d5ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a199d6232c368f3589b4a4d5599fb40c0}\label{class_equation_a199d6232c368f3589b4a4d5599fb40c0}} 
+\index{Equation@{Equation}!get\_solutions\_size@{get\_solutions\_size}}
+\index{get\_solutions\_size@{get\_solutions\_size}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{get\_solutions\_size()}{get\_solutions\_size()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Equation\+::get\+\_\+solutions\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a199d6232c368f3589b4a4d5599fb40c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a10ac36464aa20c1e9abee561df79055e}\label{class_equation_a10ac36464aa20c1e9abee561df79055e}} 
+\index{Equation@{Equation}!operator=@{operator=}}
+\index{operator=@{operator=}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_equation}{Equation}}\& Equation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_equation}{Equation}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+assignment operator 
+
+the function uses copy and swap idiom and calls to the cpy ctor \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_equation_a09227245aaebebac256580f757174ba7}{swap()}} the function also checks for self assessment the function handles a = 0 case 
+
+\mbox{\hyperlink{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}{set\+\_\+a()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & const \mbox{\hyperlink{class_equation}{Equation}} \& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_equation_a5225858dddf8142f0d99dbffeb7f90cf}\label{class_equation_a5225858dddf8142f0d99dbffeb7f90cf}} 
+\index{Equation@{Equation}!operator=@{operator=}}
+\index{operator=@{operator=}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_equation}{Equation}}\& Equation\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_equation}{Equation}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+move assignment 
+
+the function handles a = 0 case \begin{DoxySeeAlso}{See also}
+set\+\_\+(a) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{class_equation}{Equation}} \&\& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_equation_a5225858dddf8142f0d99dbffeb7f90cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}\label{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}} 
+\index{Equation@{Equation}!set\_a@{set\_a}}
+\index{set\_a@{set\_a}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{set\_a()}{set\_a()}}
+{\footnotesize\ttfamily void Equation\+::set\+\_\+a (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+setters each setter call \begin{DoxySeeAlso}{See also}
+update\+\_\+solutions() to update after change was made to the params 
+
+\mbox{\hyperlink{class_equation_a6dcd030d9f0210271a1beccc4c0352ae}{set\+\_\+a()}} handles a = 0 case 
+\end{DoxySeeAlso}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a6dcd030d9f0210271a1beccc4c0352ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a3738056b0f6f7958764a9e656400b68f}\label{class_equation_a3738056b0f6f7958764a9e656400b68f}} 
+\index{Equation@{Equation}!set\_b@{set\_b}}
+\index{set\_b@{set\_b}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{set\_b()}{set\_b()}}
+{\footnotesize\ttfamily void Equation\+::set\+\_\+b (\begin{DoxyParamCaption}\item[{double}]{b }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a3738056b0f6f7958764a9e656400b68f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_equation_a78b476052e026d0d3ef66e1fb17184b5}\label{class_equation_a78b476052e026d0d3ef66e1fb17184b5}} 
+\index{Equation@{Equation}!set\_c@{set\_c}}
+\index{set\_c@{set\_c}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{set\_c()}{set\_c()}}
+{\footnotesize\ttfamily void Equation\+::set\+\_\+c (\begin{DoxyParamCaption}\item[{double}]{c }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_equation_a78b476052e026d0d3ef66e1fb17184b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_equation_adda6d309cbb3742a586730a1f921794c}\label{class_equation_adda6d309cbb3742a586730a1f921794c}} 
+\index{Equation@{Equation}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{output,  }\item[{const \mbox{\hyperlink{class_equation}{Equation}} \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+operator $<$$<$ overloading 
+
+friend function that has access to the private data members. the following function can print \mbox{\hyperlink{class_equation}{Equation}} objects 
+\begin{DoxyParams}{Parameters}
+{\em std\+::ostream\&} & first ostream object \\
+\hline
+{\em const} & \mbox{\hyperlink{class_equation}{Equation}}\& second object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_equation_a09227245aaebebac256580f757174ba7}\label{class_equation_a09227245aaebebac256580f757174ba7}} 
+\index{Equation@{Equation}!swap@{swap}}
+\index{swap@{swap}!Equation@{Equation}}
+\doxysubsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_equation}{Equation}} \&}]{lhs,  }\item[{\mbox{\hyperlink{class_equation}{Equation}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+swaps two \mbox{\hyperlink{class_equation}{Equation}} objects. 
+
+friend function that has access to the private data members.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Equation\&} & first obj to swap \\
+\hline
+{\em Equation\&} & second obj to swap \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_equation_8hpp}{Equation.\+hpp}}\item 
+\mbox{\hyperlink{_equation_8cpp}{Equation.\+cpp}}\end{DoxyCompactItemize}

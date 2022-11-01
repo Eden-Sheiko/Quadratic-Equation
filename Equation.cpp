@@ -6,7 +6,7 @@
 constexpr auto param  = 4;
 constexpr auto denominator_param = 2;
 
-void my_assert(bool,const std::string &);
+void my_assert(bool,const std::string& );
 
 void Equation::set_a(double a) {
     try {
@@ -49,14 +49,14 @@ void Equation::discriminant() {
         m_size = 2;
         m_ptr = new double[m_size];
         my_assert(m_ptr, "alloc failed");
-        m_ptr[0] = (-m_b + sqrt(res)) / (denominator_param * m_a);
-        m_ptr[1] = (-m_b - sqrt(res)) / (denominator_param * m_a);
+        m_ptr[0] = (- m_b + sqrt(res)) / (denominator_param * m_a);
+        m_ptr[1] = (- m_b - sqrt(res)) / (denominator_param * m_a);
     }
     else if (res == 0){
         m_size = 1;
         m_ptr = new double[m_size];
         my_assert(m_ptr, "alloc failed");
-        m_ptr[0] = -m_b/(denominator_param * m_a);
+        m_ptr[0] = - m_b / (denominator_param * m_a);
     }
     else if (res < 0){
         m_size = 0;
@@ -83,7 +83,7 @@ void Equation::update_solutions(double a,double b,double c) {
    discriminant();
 }
 
-void swap(Equation &lhs, Equation &rhs) {
+void swap(Equation& lhs, Equation& rhs) {
     std::swap(lhs.m_a,rhs.m_a);
     std::swap(lhs.m_b,rhs.m_b);
     std::swap(lhs.m_c,rhs.m_c);
