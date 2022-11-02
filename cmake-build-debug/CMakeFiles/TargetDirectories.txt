@@ -1,3 +1,3 @@
-/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles/Quadratic_Equation.dir
-/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles/Quadratic_Equation.dir
+/mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

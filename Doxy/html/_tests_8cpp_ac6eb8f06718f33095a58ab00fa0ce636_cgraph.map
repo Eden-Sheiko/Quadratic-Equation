@@ -1,12 +1,14 @@
 <map id="testEquationClass" name="testEquationClass">
-<area shape="rect" id="node1" title=" " alt="" coords="5,208,144,235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,144,285"/>
 <area shape="rect" id="node2" href="$class_equation.html#a11cf24644e2c0b7b77be1cf025d9f494" title="getters" alt="" coords="234,5,357,32"/>
 <area shape="rect" id="node3" href="$class_equation.html#a50d33a591c05fd737d9729177e1cfae4" title=" " alt="" coords="234,56,357,83"/>
 <area shape="rect" id="node4" href="$class_equation.html#a968dc6cfe47063046ff8a445166b3280" title=" " alt="" coords="234,107,357,133"/>
-<area shape="rect" id="node5" href="$class_equation.html#a199d6232c368f3589b4a4d5599fb40c0" title=" " alt="" coords="192,157,399,184"/>
-<area shape="rect" id="node6" href="$class_equation.html#a6dcd030d9f0210271a1beccc4c0352ae" title=" " alt="" coords="234,208,357,235"/>
-<area shape="rect" id="node7" href="$class_equation.html#a3738056b0f6f7958764a9e656400b68f" title=" " alt="" coords="234,259,357,285"/>
-<area shape="rect" id="node8" href="$class_equation.html#a78b476052e026d0d3ef66e1fb17184b5" title=" " alt="" coords="235,309,356,336"/>
-<area shape="rect" id="node9" href="$_tests_8cpp.html#ab9b7cced9dda5e58eda998be656add95" title=" " alt="" coords="272,360,319,387"/>
-<area shape="rect" id="node10" href="$_tests_8cpp.html#a30b19057274fae85f863a528f644bb99" title=" " alt="" coords="258,411,333,437"/>
+<area shape="rect" id="node5" href="$class_equation.html#a03c91a5b02781ddafc61246a1ea6d5ac" title=" " alt="" coords="208,157,383,184"/>
+<area shape="rect" id="node6" href="$class_equation.html#a199d6232c368f3589b4a4d5599fb40c0" title=" " alt="" coords="192,208,399,235"/>
+<area shape="rect" id="node7" href="$class_equation.html#a6dcd030d9f0210271a1beccc4c0352ae" title=" " alt="" coords="234,259,357,285"/>
+<area shape="rect" id="node8" href="$class_equation.html#a3738056b0f6f7958764a9e656400b68f" title=" " alt="" coords="234,309,357,336"/>
+<area shape="rect" id="node9" href="$class_equation.html#a78b476052e026d0d3ef66e1fb17184b5" title=" " alt="" coords="235,360,356,387"/>
+<area shape="rect" id="node10" href="$_tests_8cpp.html#ab9b7cced9dda5e58eda998be656add95" title=" " alt="" coords="272,411,319,437"/>
+<area shape="rect" id="node11" href="$_tests_8cpp.html#a30b19057274fae85f863a528f644bb99" title=" " alt="" coords="258,461,333,488"/>
+<area shape="rect" id="node12" href="$_tests_8cpp.html#ae5aee083a01551a31f906f68527f22ed" title=" " alt="" coords="242,512,349,539"/>
 </map>

@@ -7,6 +7,8 @@ void test(int,int,const std::string&);
 
 void test_obj(const Equation &,const Equation &,const std::string &);
 
+void test_obj_ptrs(const double *,const double *,const std::string &);
+
 void testEquationClass();
 
 void tests();

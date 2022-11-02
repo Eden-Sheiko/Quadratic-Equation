@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation"
+CMAKE_SOURCE_DIR = /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Quadratic_Equation.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/Quadratic_Equation.dir/progress.make
 include CMakeFiles/Quadratic_Equation.dir/flags.make
 
 CMakeFiles/Quadratic_Equation.dir/main.cpp.o: CMakeFiles/Quadratic_Equation.dir/flags.make
-CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/main.cpp
+CMakeFiles/Quadratic_Equation.dir/main.cpp.o: /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/main.cpp
 CMakeFiles/Quadratic_Equation.dir/main.cpp.o: CMakeFiles/Quadratic_Equation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Quadratic_Equation.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Quadratic_Equation.dir/main.cpp.o -MF CMakeFiles/Quadratic_Equation.dir/main.cpp.o.d -o CMakeFiles/Quadratic_Equation.dir/main.cpp.o -c "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Quadratic_Equation.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Quadratic_Equation.dir/main.cpp.o -MF CMakeFiles/Quadratic_Equation.dir/main.cpp.o.d -o CMakeFiles/Quadratic_Equation.dir/main.cpp.o -c /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/main.cpp
 
 CMakeFiles/Quadratic_Equation.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Quadratic_Equation.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/main.cpp" > CMakeFiles/Quadratic_Equation.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/main.cpp > CMakeFiles/Quadratic_Equation.dir/main.cpp.i
 
 CMakeFiles/Quadratic_Equation.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Quadratic_Equation.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/main.cpp" -o CMakeFiles/Quadratic_Equation.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/main.cpp -o CMakeFiles/Quadratic_Equation.dir/main.cpp.s
 
 CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: CMakeFiles/Quadratic_Equation.dir/flags.make
-CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.cpp
+CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Equation.cpp
 CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: CMakeFiles/Quadratic_Equation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o -MF CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o.d -o CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o -c "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Equation.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o -MF CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o.d -o CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o -c /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Equation.cpp
 
 CMakeFiles/Quadratic_Equation.dir/Equation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Quadratic_Equation.dir/Equation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Equation.cpp" > CMakeFiles/Quadratic_Equation.dir/Equation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Equation.cpp > CMakeFiles/Quadratic_Equation.dir/Equation.cpp.i
 
 CMakeFiles/Quadratic_Equation.dir/Equation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Quadratic_Equation.dir/Equation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Equation.cpp" -o CMakeFiles/Quadratic_Equation.dir/Equation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Equation.cpp -o CMakeFiles/Quadratic_Equation.dir/Equation.cpp.s
 
 CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o: CMakeFiles/Quadratic_Equation.dir/flags.make
-CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o: /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Tests.cpp
+CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o: /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Tests.cpp
 CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o: CMakeFiles/Quadratic_Equation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o -MF CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o.d -o CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o -c "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Tests.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o -MF CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o.d -o CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o -c /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Tests.cpp
 
 CMakeFiles/Quadratic_Equation.dir/Tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Quadratic_Equation.dir/Tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Tests.cpp" > CMakeFiles/Quadratic_Equation.dir/Tests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Tests.cpp > CMakeFiles/Quadratic_Equation.dir/Tests.cpp.i
 
 CMakeFiles/Quadratic_Equation.dir/Tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Quadratic_Equation.dir/Tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/Tests.cpp" -o CMakeFiles/Quadratic_Equation.dir/Tests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Tests.cpp -o CMakeFiles/Quadratic_Equation.dir/Tests.cpp.s
 
 # Object files for target Quadratic_Equation
 Quadratic_Equation_OBJECTS = \
@@ -125,7 +125,7 @@ Quadratic_Equation: CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o
 Quadratic_Equation: CMakeFiles/Quadratic_Equation.dir/Tests.cpp.o
 Quadratic_Equation: CMakeFiles/Quadratic_Equation.dir/build.make
 Quadratic_Equation: CMakeFiles/Quadratic_Equation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Quadratic_Equation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Quadratic_Equation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Quadratic_Equation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/Quadratic_Equation.dir/clean:
 .PHONY : CMakeFiles/Quadratic_Equation.dir/clean
 
 CMakeFiles/Quadratic_Equation.dir/depend:
-	cd "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation" "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation" "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug" "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug" "/mnt/c/Users/Eden/CLionProjects/Quadratic Equation/cmake-build-debug/CMakeFiles/Quadratic_Equation.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2 /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2 /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/cmake-build-debug/CMakeFiles/Quadratic_Equation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Quadratic_Equation.dir/depend
 

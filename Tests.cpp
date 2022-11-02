@@ -21,6 +21,15 @@ void test_obj(const Equation &expected,const Equation &actual,const std::string 
         std::cout << " expected " << expected << " but was " << actual << std::endl;
     }
 }
+void test_obj_ptrs(const double *expected,const double *actual,const std::string &testName){
+    if(expected==actual){
+        std::cout << testName << " FAILED!!! shallow copy" << std::endl;
+    }
+    else{
+        std::cout << testName << " PASSED!!!" << std::endl;
+        std::cout << "address : " << expected << "address : " << actual << std::endl;
+    }
+}
 
 void testEquationClass(){
     std::cout << "--------TESTS!!!--------" << std:: endl;
@@ -60,6 +69,27 @@ void testEquationClass(){
     test(0,t8_test.get_solutions_size(),"testing (Discriminant < 0)");
     test(1,t9_test.get_solutions_size(),"testing (Discriminant = 0)");
     test(2,t10_test.get_solutions_size(),"testing (Discriminant > 0)");
+    std::cout << "--------copy ctor and copy assignment --------" << std:: endl;
+    Equation t11(1,2,3);
+    Equation t12(t11);
+    std::cout <<"copy ctor test" << std::endl;
+    test(t11.get_a(),t12.get_a(),"values -> get(a) test");
+    test(t11.get_b(),t12.get_b(),"values -> get(b) test");
+    test(t11.get_c(),t12.get_c(),"values -> get(c) test");
+    test(t11.get_solutions_size(),t12.get_solutions_size(),"values -> size of solutions test");
+    test(*t11.get_solutions(),*t12.get_solutions(),"values -> dereference solutions test");
+    test_obj_ptrs(&(*t11.get_solutions()),&(*t12.get_solutions()),"values -> dereference solutions test");
+    std::cout << "----------------" << std:: endl;
+    std::cout <<"copy assignment test" << std::endl;
+    Equation t13(4,5,6);
+    Equation t14(7,8,9);
+    t14=t13;
+    test(t14.get_a(),t13.get_a(),"values -> get(a) test");
+    test(t14.get_b(),t13.get_b(),"values -> get(b) test");
+    test(t14.get_c(),t13.get_c(),"values -> get(c) test");
+    test(t14.get_solutions_size(),t13.get_solutions_size(),"values -> size of solutions test");
+    test(*t14.get_solutions(),*t13.get_solutions(),"values -> dereference solutions test");
+    test_obj_ptrs(&(*t14.get_solutions()),&(*t13.get_solutions()),"values -> dereference solutions test");
 }
 
 void tests(){

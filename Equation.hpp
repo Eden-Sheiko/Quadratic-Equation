@@ -134,7 +134,12 @@ public:
     [[nodiscard]] double get_b()const{return m_b;}
     [[nodiscard]] double get_c()const{return m_c;}
     [[nodiscard]] std::size_t get_solutions_size()const{return m_size;}
-    [[nodiscard]] double const *get_solutions()const{return m_ptr;}
+    /**
+     * i assume that the user will not use get_solutions() when the index is
+     * invalid or wrong
+     * @return double
+     */
+    [[nodiscard]] double const *get_solutions()const{ return m_ptr;}
     /// setters
     /// each setter call @see  update_solutions()
     /// to update after change was made to the
@@ -143,7 +148,6 @@ public:
     void set_a(double);
     void set_b(double);
     void set_c(double);
-
     /**
      *  \brief void functions that calculates discriminant
      */
