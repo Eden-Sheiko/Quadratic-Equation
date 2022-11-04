@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['equation_39',['Equation',['../class_equation.html#a1a9c3029fd4faef5222a208597df070b',1,'Equation::Equation(double a, double b, double c)'],['../class_equation.html#a6bfca5d7b33d14815494b24a4cd5ebfb',1,'Equation::Equation(const Equation &amp;other)'],['../class_equation.html#ae54eb6a6d18640817b6b87429edf804c',1,'Equation::Equation(Equation &amp;&amp;other) noexcept']]]
+  ['get_5fa_38',['get_a',['../class_equation.html#a11cf24644e2c0b7b77be1cf025d9f494',1,'Equation']]],
+  ['get_5fb_39',['get_b',['../class_equation.html#a50d33a591c05fd737d9729177e1cfae4',1,'Equation']]],
+  ['get_5fc_40',['get_c',['../class_equation.html#a968dc6cfe47063046ff8a445166b3280',1,'Equation']]],
+  ['get_5fsolutions_41',['get_solutions',['../class_equation.html#a03c91a5b02781ddafc61246a1ea6d5ac',1,'Equation']]],
+  ['get_5fsolutions_5fsize_42',['get_solutions_size',['../class_equation.html#a199d6232c368f3589b4a4d5599fb40c0',1,'Equation']]]
 ];

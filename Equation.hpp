@@ -1,6 +1,8 @@
 #ifndef QUADRATIC_EQUATION_EQUATION_HPP
 #define QUADRATIC_EQUATION_EQUATION_HPP
+
 #include <iostream>
+
 /**
  * \brief class Equation which managers quadratic Equation.
  *
@@ -15,7 +17,8 @@ class Equation {
      *  \param Equation& first obj to swap
      *  \param Equation& second obj to swap
     */
-    friend void swap(Equation&,Equation&);
+    friend void swap(Equation &, Equation &);
+
     /**
      * \brief operator << overloading
      *
@@ -27,7 +30,8 @@ class Equation {
      *
      * \return std::ostream object
      */
-    friend std::ostream& operator<<(std::ostream& ,const Equation&);
+    friend std::ostream &operator<<(std::ostream &, const Equation &);
+
 public:
     /**
      * \brief user defined parametric ctor
@@ -39,23 +43,25 @@ public:
      * @param b (double)the second argument.
      * @param c (double)the third argument.
      */
-    Equation(double a,double b,double c)
-        :m_b{b},m_c{c}{
+    Equation(double a, double b, double c)
+            : m_b{b}, m_c{c} {
         set_a(a);
-        }
+    }
+
     /**
      * \brief user defined parametric cpy ctor
      * @param other Equation &
      * the ctor has function that checks if a is zero,
      * @see set_a()
      */
-    Equation(const Equation& other)
-        :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+    Equation(const Equation &other)
+            : m_b{other.m_b}, m_c{other.m_c}, m_size{other.m_size} {
         set_a(other.m_a);
         for (auto i = 0; i < other.m_size; ++i) {
             m_ptr[i] = other.m_ptr[i];
         }
     }
+
     /**
      * @brief assignment operator
      *
@@ -68,14 +74,14 @@ public:
      * @param other const Equation &
      * @return *this
      */
-    Equation &operator=(const Equation& other){
-        if(this != &other)
-        {
+    Equation &operator=(const Equation &other) {
+        if (this != &other) {
             Equation tmp(other);
-            swap(*this,tmp);
+            swap(*this, tmp);
         }
         return *this;
     }
+
     /**
      * \brief move ctor
      *
@@ -84,16 +90,17 @@ public:
      *
      * @param other Equation &&
      */
-    Equation(Equation&& other)noexcept
-            :m_b{other.m_b},m_c{other.m_c},m_size{other.m_size}{
+    Equation(Equation &&other) noexcept
+            : m_b{other.m_b}, m_c{other.m_c}, m_size{other.m_size} {
         set_a(other.m_a);
         m_ptr = (other.m_ptr);
-        other.m_a=0;
-        other.m_b=0;
-        other.m_c=0;
-        other.m_size=0;
-        other.m_ptr= nullptr;
+        other.m_a = 0;
+        other.m_b = 0;
+        other.m_c = 0;
+        other.m_size = 0;
+        other.m_ptr = nullptr;
     }
+
     /**
      * \brief move assignment
      *
@@ -102,8 +109,8 @@ public:
      * @param other Equation &&
      * @return *this
      */
-    Equation& operator=(Equation&& other) noexcept {
-        if(this != &other){
+    Equation &operator=(Equation &&other) noexcept {
+        if (this != &other) {
             set_a(other.m_a);
             m_b = other.m_b;
             m_c = other.m_c;
@@ -118,10 +125,11 @@ public:
         }
         return *this;
     }
+
     /**
      * \brief dtor
      */
-    ~Equation(){
+    ~Equation() {
         delete[] m_ptr;
         m_ptr = nullptr;
         m_size = 0;
@@ -129,39 +137,49 @@ public:
         m_b = 0;
         m_c = 0;
     }
+
     /// getters
-    [[nodiscard]] double get_a()const{return m_a;}
-    [[nodiscard]] double get_b()const{return m_b;}
-    [[nodiscard]] double get_c()const{return m_c;}
-    [[nodiscard]] std::size_t get_solutions_size()const{return m_size;}
+    [[nodiscard]] double get_a() const { return m_a; }
+
+    [[nodiscard]] double get_b() const { return m_b; }
+
+    [[nodiscard]] double get_c() const { return m_c; }
+
+    [[nodiscard]] std::size_t get_solutions_size() const { return m_size; }
+
     /**
      * i assume that the user will not use get_solutions() when the index is
      * invalid or wrong
      * @return double
      */
-    [[nodiscard]] double const *get_solutions()const{ return m_ptr;}
+    [[nodiscard]] double const *get_solutions() const { return m_ptr; }
+
     /// setters
-    /// each setter call @see  update_solutions()
+    /// each setter call @see  update_solutions_for_discriminant()
     /// to update after change was made to the
     /// params
     /// @see set_a() handles a = 0 case
     void set_a(double);
+
     void set_b(double);
+
     void set_c(double);
-    /**
-     *  \brief void functions that calculates discriminant
-     */
-    void discriminant();
 
 private:
-    double m_a {};
-    double m_b {};
-    double m_c {};
-    double *m_ptr {};
-    std::size_t m_size {};
-    void update_solutions(double,double,double);
+    double m_a{};
+    double m_b{};
+    double m_c{};
+    double *m_ptr{};
+    std::size_t m_size{};
+
+    void update_solutions_for_discriminant();
+
+    /**
+     *  \brief void functions that calculates discriminant_calculator
+     */
+    void discriminant_calculator();
 };
-//todo: this valeri - those functions are not part of doxygen
+
 /**
  * \brief operator+ overloading.
  *
@@ -171,13 +189,14 @@ private:
  * @param rhs const Equation &
  * @return Equation obj
  */
-inline Equation operator+(const Equation& lhs,const Equation& rhs){
-    Equation tmp(lhs.get_a(),lhs.get_b(),lhs.get_c());
+inline Equation operator+(const Equation &lhs, const Equation &rhs) {
+    Equation tmp(lhs.get_a(), lhs.get_b(), lhs.get_c());
     tmp.set_a(lhs.get_a() + rhs.get_a());
     tmp.set_b(lhs.get_b() + rhs.get_b());
     tmp.set_c(lhs.get_c() + rhs.get_c());
     return tmp;
 }
+
 /**
  * \brief operator+ overloading.
  *
@@ -187,11 +206,12 @@ inline Equation operator+(const Equation& lhs,const Equation& rhs){
  * @param rhs const double
  * @return Equation obj
  */
-inline Equation operator+(const double lhs,const Equation& rhs){
-    Equation tmp(rhs.get_a(),rhs.get_b(),rhs.get_c());
+inline Equation operator+(const double lhs, const Equation &rhs) {
+    Equation tmp(rhs.get_a(), rhs.get_b(), rhs.get_c());
     tmp.set_c(lhs + rhs.get_c());
     return tmp;
 }
+
 /**
  * \brief operator+ overloading.
  *
@@ -201,11 +221,12 @@ inline Equation operator+(const double lhs,const Equation& rhs){
  * @param rhs const Equation &
  * @return Equation obj
  */
-inline Equation operator+(const Equation& lhs,const double rhs){
-    Equation tmp(lhs.get_a(),lhs.get_b(),lhs.get_c());
+inline Equation operator+(const Equation &lhs, const double rhs) {
+    Equation tmp(lhs.get_a(), lhs.get_b(), lhs.get_c());
     tmp.set_c(lhs.get_c() + rhs);
     return tmp;
 }
+
 /**
  * \brief operator+ overloading.
  *
@@ -216,9 +237,10 @@ inline Equation operator+(const Equation& lhs,const double rhs){
  * @param rhs const Equation &
  * @return bool
  */
-inline bool operator==(const Equation& lhs,const Equation& rhs){
+inline bool operator==(const Equation &lhs, const Equation &rhs) {
     return (lhs.get_a() == rhs.get_a() && lhs.get_b() == rhs.get_b() &&
-    lhs.get_c() == rhs.get_c() && *lhs.get_solutions() == *rhs.get_solutions()  &&
-    lhs.get_solutions_size() == rhs.get_solutions_size());
+            lhs.get_c() == rhs.get_c() && *lhs.get_solutions() == *rhs.get_solutions() &&
+            lhs.get_solutions_size() == rhs.get_solutions_size());
 }
+
 #endif //QUADRATIC_EQUATION_EQUATION_HPP

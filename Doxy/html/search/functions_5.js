@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['set_5fa_51',['set_a',['../class_equation.html#a6dcd030d9f0210271a1beccc4c0352ae',1,'Equation']]],
-  ['set_5fb_52',['set_b',['../class_equation.html#a3738056b0f6f7958764a9e656400b68f',1,'Equation']]],
-  ['set_5fc_53',['set_c',['../class_equation.html#a78b476052e026d0d3ef66e1fb17184b5',1,'Equation']]],
-  ['swap_54',['swap',['../_equation_8cpp.html#acfecea5a8e3be121309e98544a372ec6',1,'Equation.cpp']]]
+  ['test_53',['test',['../_tests_8cpp.html#ab9b7cced9dda5e58eda998be656add95',1,'test(int expected, int actual, const std::string &amp;testName):&#160;Tests.cpp'],['../_tests_8hpp.html#a5431d972ac2c6cbc57a6d6679242bb4e',1,'test(int, int, const std::string &amp;):&#160;Tests.cpp']]],
+  ['test_5fobj_54',['test_obj',['../_tests_8cpp.html#a30b19057274fae85f863a528f644bb99',1,'test_obj(const Equation &amp;expected, const Equation &amp;actual, const std::string &amp;testName):&#160;Tests.cpp'],['../_tests_8hpp.html#ad7b3726aac3452bfccd802b5878a77cf',1,'test_obj(const Equation &amp;, const Equation &amp;, const std::string &amp;):&#160;Tests.cpp']]],
+  ['test_5fobj_5fptrs_55',['test_obj_ptrs',['../_tests_8cpp.html#ae5aee083a01551a31f906f68527f22ed',1,'test_obj_ptrs(const double *expected, const double *actual, const std::string &amp;testName):&#160;Tests.cpp'],['../_tests_8hpp.html#a426502a0bf39c1ee049d5ce823b98c0f',1,'test_obj_ptrs(const double *, const double *, const std::string &amp;):&#160;Tests.cpp']]],
+  ['testequationclass_56',['testEquationClass',['../_tests_8cpp.html#ac6eb8f06718f33095a58ab00fa0ce636',1,'testEquationClass():&#160;Tests.cpp'],['../_tests_8hpp.html#ac6eb8f06718f33095a58ab00fa0ce636',1,'testEquationClass():&#160;Tests.cpp']]],
+  ['tests_57',['tests',['../_tests_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9',1,'tests():&#160;Tests.cpp'],['../_tests_8hpp.html#a88ec9ad42717780d6caaff9d3d6977f9',1,'tests():&#160;Tests.cpp']]]
 ];

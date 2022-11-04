@@ -1,7 +1,7 @@
 CMakeFiles/Quadratic_Equation.dir/Equation.cpp.o: \
- /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Equation.cpp \
+ /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/edens/CLionProjects/Quadratic-Equation_v2/Equation.hpp \
+ /mnt/c/Users/Eden/CLionProjects/Quadratic\ Equation/Equation.hpp \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

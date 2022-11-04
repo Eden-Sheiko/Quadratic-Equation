@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(Quadratic_Equation)
+project(Quadratic-Equation_v2)
 
 set(CMAKE_CXX_STANDARD 17)
 

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['operator_2b_47',['operator+',['../_equation_8hpp.html#a90c951e48e7ac29fd2708bf7f5fd00f2',1,'operator+(const Equation &amp;lhs, const Equation &amp;rhs):&#160;Equation.hpp'],['../_equation_8hpp.html#ac195b50a5b2507a332e14434083596f3',1,'operator+(const double lhs, const Equation &amp;rhs):&#160;Equation.hpp'],['../_equation_8hpp.html#a434bdafd1adf5033c9bb469f2f8490d2',1,'operator+(const Equation &amp;lhs, const double rhs):&#160;Equation.hpp']]],
-  ['operator_3c_3c_48',['operator&lt;&lt;',['../_equation_8cpp.html#abd6e10101be25a984c529f793f7846a8',1,'Equation.cpp']]],
-  ['operator_3d_49',['operator=',['../class_equation.html#a10ac36464aa20c1e9abee561df79055e',1,'Equation::operator=(const Equation &amp;other)'],['../class_equation.html#a5225858dddf8142f0d99dbffeb7f90cf',1,'Equation::operator=(Equation &amp;&amp;other) noexcept']]],
-  ['operator_3d_3d_50',['operator==',['../_equation_8hpp.html#a8838a2af03931094dcd47e489108ca3b',1,'Equation.hpp']]]
+  ['set_5fa_49',['set_a',['../class_equation.html#a6dcd030d9f0210271a1beccc4c0352ae',1,'Equation']]],
+  ['set_5fb_50',['set_b',['../class_equation.html#a3738056b0f6f7958764a9e656400b68f',1,'Equation']]],
+  ['set_5fc_51',['set_c',['../class_equation.html#a78b476052e026d0d3ef66e1fb17184b5',1,'Equation']]],
+  ['swap_52',['swap',['../_equation_8cpp.html#acfecea5a8e3be121309e98544a372ec6',1,'Equation.cpp']]]
 ];
