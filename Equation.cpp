@@ -14,7 +14,7 @@ void Equation::set_a(double a) {
             throw std::invalid_argument("a argument cannot be zero.\n");
         } else {
             m_a = a;
-            update_solutions_for_discriminant();
+            find_roots();
         }
     }
     catch (const std::invalid_argument &error) {
@@ -24,26 +24,33 @@ void Equation::set_a(double a) {
 
 void Equation::set_b(double b) {
     m_b = b;
-    update_solutions_for_discriminant();
+    find_roots();
 }
 
 void Equation::set_c(double c) {
     m_c = c;
-    update_solutions_for_discriminant();
+    find_roots();
 }
 
 /**
- * \brief discriminant_calculator function
+ * \brief find_roots function
+ *
+ * the function handles if there is an dynamic array
+ * its deletes the old array because the solution size
+ * and array will be changed.
  *
  * the function handles the 3 solutions
- * if res of the discriminant_calculator bigger then zero
+ * if res of the find_roots bigger then zero
  * then there is 2 roots
- * if res of the discriminant_calculator equals to zero
+ * if res of the find_roots equals to zero
  * then there is 1 root
- * if res of the discriminant_calculator less then zero
+ * if res of the find_roots less then zero
  * there are zero roots
  */
-void Equation::discriminant_calculator() {
+void Equation::find_roots() {
+    if (m_size >= 0) {
+        delete[] m_ptr;
+    }
     auto res = m_b * m_b - param * m_a * m_c;
     if (res > 0) {
         m_size = 2;
@@ -61,22 +68,6 @@ void Equation::discriminant_calculator() {
         m_ptr = new double[m_size];
         my_assert(m_ptr, "alloc failed");
     }
-}
-
-/**
- * \brief update_solutions_for_discriminant of the Equation
- *
- * deletes the dynamic array and calls to the
- * discriminant_calculator() function
- *
- *
- * @see discriminant_calculator()
- */
-void Equation::update_solutions_for_discriminant() {
-    if (m_size >= 0) {
-        delete[] m_ptr;
-    }
-    discriminant_calculator();
 }
 
 void swap(Equation &lhs, Equation &rhs) {

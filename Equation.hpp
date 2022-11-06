@@ -172,12 +172,10 @@ private:
     double *m_ptr{};
     std::size_t m_size{};
 
-    void update_solutions_for_discriminant();
-
     /**
-     *  \brief void functions that calculates discriminant_calculator
+     *  \brief void functions that calculates find_roots
      */
-    void discriminant_calculator();
+    void find_roots();
 };
 
 /**
